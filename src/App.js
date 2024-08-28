@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import Canvas from './Canvas/Canvas'; 
 import './App.css';
 
 function App() {
+  const canvasCss = {
+    width: "1000px",
+    height: "800px",
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Canvas width={canvasCss.width} height="1500" />
     </div>
   );
 }
